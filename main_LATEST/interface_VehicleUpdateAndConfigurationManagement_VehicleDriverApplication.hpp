@@ -20,6 +20,22 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef unsigned char uint8;
+
+class interface_VehicleUpdateAndConfigurationManagement_VehicleDriverApplication{
+   public:
+      uint8 ApprovalRequired;
+      uint8 CampaignState;
+//    uint8 VehicleConditions;
+//    virtual void AllowCampaign           (void) = 0;
+//    virtual void CancelCampaign          (void) = 0;
+      virtual void DriverApproval          (void) = 0;
+//    virtual void GetCampaignHistory      (void) = 0;
+      virtual void GetSwClusterDescription (void) = 0;
+      virtual void GetSwPackageDescription (void) = 0;
+      virtual void GetSwProcessProgress    (void) = 0;
+      virtual void GetSwTransferProgress   (void) = 0;
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

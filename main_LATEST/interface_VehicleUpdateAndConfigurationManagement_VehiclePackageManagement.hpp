@@ -20,6 +20,26 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef unsigned char uint8;
+
+class interface_VehicleUpdateAndConfigurationManagement_VehiclePackageManagement{
+   public:
+      uint8 RequestedPackage;
+      uint8 TransferState;
+      uint8 VehicleConditions;
+      virtual void AllowCampaign          (void) = 0;
+      virtual void CancelCampaign         (void) = 0;
+      virtual void DeleteTransfer         (void) = 0;
+      virtual void GetCampaignHistory     (void) = 0;
+      virtual void GetSwClusterInfo       (void) = 0;
+      virtual void GetSwPackages          (void) = 0;
+      virtual void GetVehicleUCMInfo      (void) = 0;
+      virtual void SwPackageInventory     (void) = 0;
+      virtual void TransferData           (void) = 0;
+      virtual void TransferExit           (void) = 0;
+      virtual void TransferStart          (void) = 0;
+      virtual void TransferVehiclePackage (void) = 0;
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */
