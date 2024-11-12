@@ -7,6 +7,8 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "TypesStd.hpp"
+
 #include "interface_VehicleUpdateAndConfigurationManagement_VehiclePackageManagement.hpp"
 #include "interface_VehicleUpdateAndConfigurationManagement_VehicleDriverApplication.hpp"
 #include "interface_VehicleUpdateAndConfigurationManagement_VehicleStateManager.hpp"

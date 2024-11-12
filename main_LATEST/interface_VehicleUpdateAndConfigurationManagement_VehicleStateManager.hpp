@@ -20,8 +20,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef unsigned char uint8;
-
 class interface_VehicleUpdateAndConfigurationManagement_VehicleStateManager{
    public:
 //    uint8 VehicleConditions;
